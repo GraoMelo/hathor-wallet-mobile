@@ -37,7 +37,7 @@
     "prop-types": "^15.7.2",
     "punycode": "^1.4.1",
     "querystring-es3": "^0.2.1",
-    "react": "16.8.3",
+    "react": "16.13.1",
     "react-native": "0.59.9",
     "react-native-camera": "^2.9.0",
     "react-native-crypto": "^2.1.2",
