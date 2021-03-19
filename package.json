@@ -9,7 +9,9 @@
     "android": "node node_modules/.bin/react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/ && node node_modules/.bin/react-native run-android",
     "node-hack": "node node_modules/.bin/rn-nodeify --hack",
     "test": "jest",
-    "locale-update-pot": "ttag extract -o ./locale/texts.pot ./src/"
+    "locale-update-pot": "ttag extract -o ./locale/texts.pot ./src/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.18",
@@ -72,7 +74,8 @@
     "tty-browserify": "0.0.0",
     "url": "^0.10.3",
     "util": "^0.10.4",
-    "vm-browserify": "0.0.4"
+    "vm-browserify": "0.0.4",
+    "snyk": "^1.500.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.4",
@@ -144,5 +147,6 @@
     "tty": "tty-browserify",
     "vm": "vm-browserify",
     "tls": false
-  }
+  },
+  "snyk": true
 }
